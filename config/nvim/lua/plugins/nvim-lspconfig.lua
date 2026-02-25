@@ -11,7 +11,6 @@ return {
       { "<leader>cd", vim.diagnostic.open_float, desc = "LSP: Line Diagnostics" },
       { "gd", vim.lsp.buf.definition, desc = "LSP: Go to Definition" },
       { "K", vim.lsp.buf.hover, desc = "LSP: Hover Documentation" },
-      { "<leader>cA", vim.diagnostic.setqflist, desc = "LSP: Open All Fixes in Quickfix List" },
     },
     enabled = true
 }
