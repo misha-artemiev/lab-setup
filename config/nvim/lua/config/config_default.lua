@@ -17,7 +17,7 @@ end
 
 if vim.g.config_numbers then
   vim.opt.number = true
-  vim.opt.relativenumber = true
+  vim.opt.relativenumber = false
 else
   vim.opt.number = false
   vim.opt.relativenumber = false
