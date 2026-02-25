@@ -1,2 +1,7 @@
 #! /usr/bin/env bash
-export PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/bin:$PATH"
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+export PATH="$SCRIPT_DIR/bin:$PATH"
+export LD_LIBRARY_PATH="$SCRIPT_DIR/lib:$LD_LIBRARY_PATH"
+export XDG_DATA_DIRS="$SCRIPT_DIR/share:$XDG_DATA_DIRS"
