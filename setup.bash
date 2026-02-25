@@ -7,3 +7,4 @@ export LD_LIBRARY_PATH="$SCRIPT_DIR/lib:$LD_LIBRARY_PATH"
 export XDG_DATA_DIRS="$SCRIPT_DIR/share:$XDG_DATA_DIRS"
 
 ln -s "$SCRIPT_DIR/config/nvim" ~/.config/nvim
+alias nvim=XDG_CONFIG_HOME="$SCRIPT_DIR/config" nvim
