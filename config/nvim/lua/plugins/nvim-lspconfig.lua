@@ -4,16 +4,7 @@ return {
     config = function()
         local lspconfig = require("lspconfig")
         local capabilities = require("blink.cmp").get_lsp_capabilities()
-        lspconfig.clangd.setup {
-            cmd = {
-                "clangd",
-                "--clang-tidy",
-                "--background-index",
-                "--completion-style=detailed",
-                "--header-insertion=iwyu",
-            },
-            capabilities = capabilities,
-        }
+        lspconfig.clangd.setup { capabilities = capabilities }
     end,
     keys = {
       { "<leader>ca", vim.lsp.buf.code_action, desc = "LSP: Code Action (Fixes)", mode = { "n", "v" } },
